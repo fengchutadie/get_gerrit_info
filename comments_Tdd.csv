@@ -1,0 +1,152 @@
+reviewId,date,Comments contributor,comments
+18826,2017-08-27 02:12:34,Hu Bing,"if you change this condition like this, maybe just
+if(m_rrmCurrentVrbIndex[0]+numOfPrbs < m_rrmMaxVrbIndex[0])
+{
+  ...
+}
+is enough, no need to check lockedPrb,since no matter what value equals to lockedPrb, the condition is the same"
+18513,2017-08-21 02:35:46,Zhang Hui Tuan,could we use other macro  than 5?
+18557,2017-08-18 02:43:26,Liu Liang,could you add 'const' before all parameters?
+18557,2017-08-18 02:43:26,Dong Yong De,"it looks checking DL first every time. if last scheduled diretion is DL, this time shall turn to UL, then it may not work.
+if my understand correct, suggest to use/add a flag of UE to record the direction scheduled last tim."
+18557,2017-08-18 02:43:26,Dong Yong De,"There's no implementation that match the funtion name SRBTx, why?"
+18557,2017-08-18 02:43:26,Dong Yong De,DRBTx shall be divided into at least two types: GBR and non-GBR.
+18557,2017-08-18 02:43:26,Dong Yong De,"the part of ""else"" it not same level with ""if"", and similiar code repeated again in fetchUe(). suggest to avoid the duplicity problem."
+18557,2017-08-18 02:43:26,Dong Yong De,if UlSrb is covered in else branch?
+18557,2017-08-18 02:43:26,Dong Yong De,"1) the DL/UL dual direction switch happen only in DRBs.
+2) the ""Ul to DL"" and ""DL to UL"" switching are better to be encapsulated into one common function."
+18557,2017-08-18 02:43:26,He Yuan Song,"why add ""ESchType_MRar!= ueNode.schType"" here?"
+18557,2017-08-18 02:43:26,He Yuan Song,"can use ""return"" instead"
+18557,2017-08-18 02:43:26,Liu Liang,?if??&&????????else?????????????????????????ue invalid??
+18557,2017-08-18 02:43:26,Dong Yong De,fetchTx and fetchReTx has included fetchDRBtX and fetchSRBtX?
+18557,2017-08-18 02:43:26,Liu Liang,"refine suggestion:
+could the two functions be instead by a macro, with a parameter to determine DL or UL?
+
+someting like:
+#define fetchXXX(_PARAM_) \
+bool MPsPreScheduler::fetch##_PARAM_##TxFirst(const TUeIndex uePsIndex, const ::macps::Xsfn& xsfn)
+{
+  bool scheduleResult = false;
+  scheduleResult = fetch##_PARAM_##TxUe(uePsIndex, xsfn);
+  if (!scheduleResult)
+  {
+    scheduleResult = fetch##_PARAM_##TxUe(uePsIndex, xsfn);
+  }
+  return scheduleResult;
+}"
+18557,2017-08-18 02:43:26,Chen Lian Bing,"-when the re-transmission was SRB/QCI5, no need to switch direction.
+-when the re-transmission was GBR/NonGBR, call the ""switchLastSchDirection"" may not good, example:
+
+currently DL/UL GBR re-transmission was exist.
+1.suppose default direction was DL.
+2. TT0 scheduled DL-Retx, then the direction witch to UL.
+3. TT1 it will still scheduled DL, not UL."
+18557,2017-08-18 02:43:26,Chen Lian Bing,"For Srb re-transmission, no need to do DL/UL switch. so we can take UL re-transmission first:
+
+if (hasUlSignallingRetx)
+{
+  return preScheduleUlRetxFirst();
+}
+else
+{
+  return preScheduleDlRetxFirst();
+}"
+18557,2017-08-18 02:43:26,Chen Lian Bing,"GBRRetx > nonGBRRetx, so this can be split into two separated procedures, otherwise the fetchDataRetx() will be more complicated."
+18557,2017-08-18 02:43:26,Chen Lian Bing,"Because they have different priority, so the pre-schedule procedure should be splitted. 
+
+-Suppose UE has DL-Srb2, and UL-SRB1.
+-if last direction was UL. the DL-Srb2 will be scheduled.
+-However, the UL-SRB1 has higher priority."
+18557,2017-08-18 02:43:26,He Yuan Song,"if ""ESchType_MRar!= ueNode"" and ""!mue.isValid()"", the inVaild ue will enter scheduledUe(). There is no ""mue.isValid"" judgement any more after scheduledUe()."
+18635,2017-08-16 05:11:27,Xu Wenjun,why ET in the case name?
+18356,2017-07-31 01:24:59,Shi Feng,why delete
+18356,2017-07-31 01:24:59,Shi Feng,why deleted
+18356,2017-07-31 01:24:59,Shi Feng,?
+18250,2017-07-27 05:21:55,Shen Anmin,remove those space
+18227,2017-07-25 01:21:50,Zhang Hui Tuan,should we specify this is only for AIRSCALE?
+18227,2017-07-25 01:21:50,Zhang Hui Tuan,"1.remove space
+2.const"
+18227,2017-07-25 01:21:50,Zhang Hui Tuan,extract one function?
+18227,2017-07-25 01:21:50,Zhang Hui Tuan,"1. inline is not needed in internal of one class
+2. const
+3. Max?"
+18227,2017-07-25 01:21:50,Zhang Hui Tuan,"1. pls refer to coding standard for member variable:https://bts.inside.nokiasiemensnetworks.com/twiki/bin/view/MacPsWmp/MacPsWmpCodeGuideline
+2. numOfSubInstance?"
+18227,2017-07-25 01:21:50,Zhang Hui Tuan,"1.remove space
+2.const bool isTddAirScale."
+18227,2017-07-25 01:21:50,Zhang Hui Tuan,"pls help to remove ""space"""
+18227,2017-07-25 01:21:50,Zhang Hui Tuan,remove space after ?
+18227,2017-07-25 01:21:50,Zhang Hui Tuan,"add space before/after ""="""
+18227,2017-07-25 01:21:50,Zeng Liang,suggest name:  MACPS_NUM_OF_SUBINSTANCES_ON_AIRSCALE_TDD
+18227,2017-07-25 01:21:50,Zeng Liang,how about move this line into mapCellSlotToSubInstance()?
+18227,2017-07-25 01:21:50,Zeng Liang,"since many place call this function,and seem long, suggest to define a macro for this function call."
+18227,2017-07-25 01:21:50,Zhang Hui Tuan,const?
+18227,2017-07-25 01:21:50,Zhang Hui Tuan,const SPoolConf& poolConf
+18050,2017-07-12 03:24:30,Zhang Shuyan,the same comments as the above
+18050,2017-07-12 03:24:30,Zhang Shuyan,"propose that one function named ""getUeCeLevel ()"" can be used to get the parameter of coverageLevel"
+17951,2017-07-06 02:21:59,Shi Feng,initialized with ERaContResoTmrCatM_NotConfigured
+17951,2017-07-06 02:21:59,Shi Feng,=0?
+17951,2017-07-06 02:21:59,Shi Feng,memcpy?
+17951,2017-07-06 02:21:59,Shi Feng,why not usging catMPreambleList directly
+17951,2017-07-06 02:21:59,Zhang Hui Tuan,catMPreamble != GLO_NULL??
+17951,2017-07-06 02:21:59,Zhang Hui Tuan,should we add catM Preamble info in the following log?
+17350,2017-05-25 07:46:48,Chen Ming Feng,move { to the end of up line
+17254,2017-05-23 02:35:23,Zhong Ping,remove blank
+17177,2017-05-16 08:02:31,Shi Feng,15M?
+17177,2017-05-16 08:02:31,Shi Feng,delete masked code
+17177,2017-05-16 08:02:31,Shi Feng,7 8
+17177,2017-05-16 08:02:31,Shi Feng,hard code 3 2
+17177,2017-05-16 08:02:31,Shi Feng,type -> enum?
+17177,2017-05-16 08:02:31,Shi Feng,tempResourceIndexAn  = resourceIndexSr ? so might change a better name
+17067,2017-05-09 07:00:38,Wang Hong Wei,suggest: #define PumaCore 15 -> #define PUMA_CORE_ID 15
+17067,2017-05-09 07:00:38,Wang Hong Wei,suggest: CORE_COUNT -> RT_CORE_COUNT
+17067,2017-05-09 07:00:38,Wang Hong Wei,"suggest: 
+#define PumaCore 15 -> #define PUMA_CORE_ID 15
+#define CheckerCore 15 -> #define CHECKER_CORE_ID 15"
+17067,2017-05-09 07:00:38,Wang Hong Wei,"Lionfish MACPS doesn't use RT CORE 0 ~ 3, start with RT CORE 16 (15)"
+16986,2017-05-02 06:17:39,Xu Wenjun,"actually, there are duplication with ResTables.hpp about the prb start index and NB num. It's better to refine them and decrease the redundancy."
+16986,2017-05-02 06:17:39,Chen Lian Bing,"This RB Start Index table has been defined in ResTable.hpp?we can use it directly, so the definition here would be duplicated."
+16822,2017-04-17 02:03:12,Pan Li Feng,please remove it
+16822,2017-04-17 02:03:12,Pan Li Feng,Don't need to remove it
+16801,2017-04-14 02:10:58,Wang Min,"for the definition of the function, maybe it is better to keep the constant on the left side?the non constant on the right side."
+16763,2017-04-11 02:41:47,Zhang Hui Tuan,EMacPsLoggingUlExt_CatM?
+16763,2017-04-11 02:41:47,Liang Qing Quan,use logPsFeatureTrace
+16763,2017-04-11 02:41:47,Zhang Hui Tuan,logPsWarning?
+16721,2017-04-07 01:35:05,Zhang Hui Tuan,logCellInfo?
+16721,2017-04-07 01:35:05,Shi Feng,whether shall use logUeDebug
+16721,2017-04-07 01:35:05,Zhang Hui Tuan,uePsIndex?
+16721,2017-04-07 01:35:05,Zhang Hui Tuan,remove the last <space> after failed?
+16721,2017-04-07 01:35:05,Zhang Hui Tuan,remove ----
+16631,2017-03-30 02:23:09,Zhong Ping,remove blank
+16394,2017-03-15 08:57:13,Pan Li Feng,It is better to use ECL
+16394,2017-03-15 08:57:13,Pan Li Feng,Not correct on LLF10 ontarget. It is better not to commit it
+16394,2017-03-15 08:57:13,Pan Li Feng,It is better to use ECL to config it
+16290,2017-03-14 00:54:23,Zhang Shuyan,delete
+16234,2017-03-03 05:22:01,Zhang Shuyan,"don't use assert ,please"
+16208,2017-03-01 05:52:39,Zhang Hui Tuan,"is there one gap ? drbid 3,4,5, if we delete 3?"
+15904,2017-02-21 05:37:20,Liang Qing Quan,amcCStepUpModeACatM * (1000 - pdschBler) / pdschBler;
+15904,2017-02-21 05:37:20,Liang Qing Quan,deltaCqi -= amcCStepDownModeACatM;
+15904,2017-02-21 05:37:20,Liang Qing Quan,invalid character
+15904,2017-02-21 05:37:20,Liang Qing Quan,"if iniMcsDlModeACatM = 0, iniMcsDlModeACatM -= 1 is error"
+15904,2017-02-21 05:37:20,Liang Qing Quan,2017 Nokia
+15904,2017-02-21 05:37:20,Zhang Hui Tuan,abstract one init function?
+15904,2017-02-21 05:37:20,Zhang Hui Tuan,remove space? same as below...
+15904,2017-02-21 05:37:20,Zhang Hui Tuan,could we move this part verfication into the handleMacPduMuxCombinedReqMsg function?
+15904,2017-02-21 05:37:20,Zhang Hui Tuan,"rename case1/2/3 to meaningful name? such as 0Bler, 10Bler?
+remove tab."
+15904,2017-02-21 05:37:20,Zhang Hui Tuan,FID_UNKNOW -->?#define one FID?
+15904,2017-02-21 05:37:20,Zhang Hui Tuan,add description here.
+15904,2017-02-21 05:37:20,Zhang Hui Tuan,debug level? logPsFeatureTrace?
+15976,2017-02-14 02:34:53,Zhang Shuyan,iniMcsDlModeACatM        = DEFAULT_MCS; should be got from Cell setup
+15917,2017-02-09 01:48:18,Zhang Hui Tuan,add one space before catmAmcParams
+15892,2017-02-07 08:11:02,Gong Jia Ye,should use space instead of tab
+15607,2017-01-19 02:44:48,Liang Qing Quan,align
+15607,2017-01-19 02:44:48,Liang Qing Quan,don't need to ()
+15607,2017-01-19 02:44:48,Liang Qing Quan,before = have two space
+15607,2017-01-19 02:44:48,Liang Qing Quan,delete it
+15607,2017-01-19 02:44:48,Zhang Hui Tuan,remove this or use pumaLogDebug
+15607,2017-01-19 02:44:48,Zhang Hui Tuan,could we remove this log?
+15607,2017-01-19 02:44:48,Zhang Hui Tuan,pumaLogDebug?
+15607,2017-01-19 02:44:48,Zhang Hui Tuan,remove tab
+15607,2017-01-19 02:44:48,Zhang Hui Tuan,checkHarqInfoBetweenPduMuxAndPdcch ==> checkHarqInfoBetweenPduMuxAndMPdcch
+15711,2017-01-17 10:35:37,Zhang Shuyan,is there sendXsfn < 0  ? right

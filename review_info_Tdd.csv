@@ -1,0 +1,100 @@
+reviewId,author_id,author,change_id,subject,insertion,deletions,created,submit,approve_id,approved,comment_num
+18830,lianbche,Chen Lian Bing,I08341d9c897726b5e83b3c0e1a48f5f559769354,LTE4056-A-g: Add DL scheduling types.,21,20,2017-08-25 09:02:32,2017-08-25 09:59:12,xiaosu,Su Xiao Long,0
+18826,weiqchen,Chen Wei Qiang,I1106b5c7b268c2fa8f0698d358c223ccb4b2435e,FEATURE:NF LTE3145: config the slim carrier in the mac ps conde to blank the down prbs and up prbs 2. Summary: config the slim carrier in the mac ps conde to blank the down prbs and up prbs 2.,5,4,2017-08-25 07:59:10,2017-08-25 08:33:40,binhu,Hu Bing,1
+18513,tjk473,Shen Anmin,I1ff1dd83e2b86596c1a8bb588d7553f9ce33978e,Adaptation code of common code on AirScal in cell setup phase.,25,26,2017-08-09 07:04:11,2017-08-21 02:25:18,dbgn37,Zhang Hui Tuan,1
+18675,weiqchen,Chen Wei Qiang,I362d69ff2364f0e1345d97912bc254d10f6d4569,FEATURE:NF LTE3145: config the slim carrier in the mac ps conde to blank the down prbs and up prbs. Summary: config the slim carrier in the mac ps conde to blank the down prbs and up prbs.,331,16,2017-08-17 10:10:07,2017-08-18 05:26:42,binhu,Hu Bing,0
+18557,yifang,Fang Yi Xin,Iea5761c0e1e231fe9ad26c597015ccd6a6893820,LTE4056-A-h:add new type UE handle in round Robin,231,79,2017-08-11 08:08:26,2017-08-17 11:23:51,qiulhuan,Huang Qiu Lan,17
+18682,qiliang,Liang Qing Quan,I02368b7442072a8f7c81e93fae64769477924fe2,FEATURE:NF LTE4177: puma handle PHY_UlReceiveReq to support two level,30,20,2017-08-18 00:34:38,2017-08-18 00:55:43,dbgn37,Zhang Hui Tuan,0
+18635,congma,Ma Cong,I7e2a58defb4477e597e385b187d237ec42ad5c4a,LTE3597_A_e improve the checkpoint with SR Prohibit Feature,70,20,2017-08-16 03:13:30,2017-08-16 05:09:21,lianbche,Chen Lian Bing,1
+18544,hfm487,Zhong Ping,I52ac85fc3f9aba1ace11837217918c9938e18cf3,lionfish:to adapt new T_Tools version For LF ENV following paths are supported for ARM: -I${includedir}/CCS_ENV/RT/Definitions \ -I${includedir}/CCS_ENV/RT/Messages \ -I${includedir}/CCS_ENV/RT/ServiceInterface \ -I${includedir}/CCS_ENV/COMMON/Definitions,20,4,2017-08-10 09:31:46,2017-08-11 06:17:13,hkan,Kan Hong Quan,0
+18329,wenjuxu,Xu Wenjun,I46f86eecfc211f0e14665375a9123f3d24f599d6,Add new feature trace for CatM PM Counter log.,2,0,2017-07-28 07:35:48,2017-07-28 08:02:04,xiaosu,Su Xiao Long,0
+18389,hfm487,Zhong Ping,I3aa0ecd570af02420954dceaa6384372d0bbf9aa,"lionfish:1,update code to support 6 cells. 2,mv macps from to EM core 6~13",101,51,2017-08-01 11:25:27,2017-08-02 06:22:40,hkan,Kan Hong Quan,0
+18230,x8zhu,Zhu Xiao,I041b94fe45b3c4f5fe16e8baf97c2fafd5e7d412,Lionfish: change checker CPID,5,13,2017-07-21 03:09:05,2017-08-01 03:10:50,hfm487,Zhong Ping,0
+18366,h18wang,Wang Hong Wei,I17a05f73ef312bd884321a5711f435dbf84b808d,"3 subinstances, 3 cell",186,31,2017-07-31 09:34:26,2017-08-01 02:27:02,hfm487,Zhong Ping,0
+18362,l16liu,Liu Liang,I94e77f6bdc4e0e0cab32adf015a3b9eaa36fae7c,reduce the duplication for catm cases,15,96,2017-07-31 07:20:16,2017-07-31 08:42:28,talei,Lei Tao,0
+18356,qiliang,Liang Qing Quan,I223427ca17de3c72ca5894aba5d5cc0f889c482f,FEATURE:IN LTE3128 refine dl harq--delete pdcch block,3,50,2017-07-31 00:30:17,2017-07-31 01:04:21,dbgn37,Zhang Hui Tuan,3
+18337,l16liu,Liu Liang,I13a84bb234e8e2735742edeebaffd8068c2cb3c2,update invalid subframe params for LTE3128_S_g SCT case,1,1,2017-07-28 09:12:33,2017-07-28 09:23:39,talei,Lei Tao,0
+18250,linpzhu,Zhu Lin Ping,If055322b9cad11ed8e695bbb457e19f7df97e22e,fix complexity and remove whitespace,18,5,2017-07-24 05:49:53,2017-07-26 06:20:57,tjk473,Shen Anmin,1
+18227,tjk473,Shen Anmin,I763ca3430939d87e322b4430df574b74e87d4240,Adaptation code of common code on AirScal in cell setup phase.,77,75,2017-07-21 02:17:26,2017-07-25 00:49:16,dbgn37,Zhang Hui Tuan,14
+18163,qiliang,Liang Qing Quan,I766dcd0b5402130976ea403364c3aeda55de021d,FEATURE:NF LTE4177-A-b fix comment,16,16,2017-07-18 05:38:36,2017-07-18 06:27:13,dbgn37,Zhang Hui Tuan,0
+18155,yawzheng,Zheng Ya Wei,I2093a51be1dd329a4237d56292c55e287385626c,FEATURE:NF LTE3597: Optimization mib repetition with legacy paging onesct cases,88,592,2017-07-17 09:04:12,2017-07-18 05:19:05,dbgn37,Zhang Hui Tuan,0
+18085,h18wang,Wang Hong Wei,Ifbffaf3b2c491b43219fa138c60f9b9f51582ef0,"[Lionfish]LBT4137_D_o2 modify code to support multi subInstances, one cell per subInstance.",261,50,2017-07-12 08:53:12,2017-07-14 01:50:32,hfm487,Zhong Ping,0
+18050,qiliang,Liang Qing Quan,I3f3c2f8ea7e90318b0c4169cc0dd1b37d67e1186,FEATURE:NF LTE4177-A-b catM semi-static repetition support-msg3 retx,53,29,2017-07-11 05:19:37,2017-07-12 03:15:17,dbgn37,Zhang Hui Tuan,2
+17923,linpzhu,Zhu Lin Ping,Ib2cc8404486ba2666493d35644ec89af083438a5,add cp case for TDD,82,3,2017-07-03 09:01:37,2017-07-11 05:37:31,tjk473,Shen Anmin,0
+18023,qiliang,Liang Qing Quan,Id227b39e6b6d62f4fc05497d9c6edeaf65ec12e6,FEATURE:NF LTE4177-A-b fix comment,75,80,2017-07-10 02:20:08,2017-07-10 03:12:31,dbgn37,Zhang Hui Tuan,0
+17951,qiliang,Liang Qing Quan,I86fef38bf4f630818fcf5ceb616edc0c83c7d21e,FEATURE:NF LTE4177-A-b catM semi-static repetition support,57,38,2017-07-05 05:25:33,2017-07-06 02:20:33,dbgn37,Zhang Hui Tuan,6
+17920,jiandyan,Yang Jian Dong,Ic660ce5bb4aae73f4b724536342ad9567d435455,modify make_file.yaml to include lib folder,6,1,2017-07-03 08:49:39,2017-07-04 01:49:21,yinglu,Lu Ying,0
+17767,linpzhu,Zhu Lin Ping,I546f0dd55c608c2c34567d310cb6bf84f9cf7e0b,using math::decrease instead of substruction to avoid negative number,2,2,2017-06-21 07:31:25,2017-06-22 03:05:41,tjk473,Shen Anmin,0
+17681,tjk473,Shen Anmin,I9783502a316e5035dba1577e9d5e50339be71844,Adaptation code of common code on AirScal in cell setup phase.,58,10,2017-06-16 05:45:08,2017-07-03 05:28:51,dbgn37,Zhang Hui Tuan,0
+17703,qiliang,Liang Qing Quan,I129cb43a18485e2be1d5be329b5cd6fca8a8f66a,FEATURE:IN modify catm onesct case name,6,6,2017-06-19 02:53:44,2017-06-19 08:36:39,dbgn37,Zhang Hui Tuan,0
+17668,tjk473,Shen Anmin,I03026983a3c826e4123b485e00a83f4babf3d220,change the log alignment in code.,6,6,2017-06-15 06:48:14,2017-06-15 07:41:45,dbgn37,Zhang Hui Tuan,0
+17389,linpzhu,Zhu Lin Ping,I3d291630b32ae45aa5154f6524bfdd5a0617cb91,"fix the issue of fail to load to excel using --easy sometimes relative path do not work, so change to absolute path",21,6,2017-05-26 02:11:12,2017-05-26 05:36:02,tjk473,Shen Anmin,0
+17377,qiliang,Liang Qing Quan,I14f595395b8f6eb9408d9b1c851df6effc27c71e,FEATURE:NF LTE3128 increase UT coverage,230,8,2017-05-25 05:36:43,2017-05-25 10:00:56,dbgn37,Zhang Hui Tuan,0
+17350,yawzheng,Zheng Ya Wei,Id3d20f5da2ad22c93735b3eb96fbec72f3e45062,FEATURE:NF LTE3597:catm code refinement,33,36,2017-05-24 02:01:57,2017-05-25 07:44:34,dbgn37,Zhang Hui Tuan,1
+17330,linpzhu,Zhu Lin Ping,I1c127961ec444ab38fe438a3b2bbc6871b2abc04,support --easy command line for TED,195,19,2017-05-22 13:59:47,2017-05-23 04:45:53,tjk473,Shen Anmin,0
+17254,x8zhu,Zhu Xiao,I8c1ea3f4d01fda5614411c6405df123baf0fdc51,LTE3146:fix UT case for lionfish,112,89,2017-05-17 07:53:26,2017-05-23 02:11:33,hfm487,Zhong Ping,1
+17206,linpzhu,Zhu Lin Ping,I9f59a0ce0406aa24b633398060ae489610af83a9,"1 fix the wrong wft link 2 fix the issue of can not load decodedTxt to Excel after decode 3 support ted dotNetDownload for ttitrace 4 support download ttitrace by way: read enb-version from binFile, convert enb-version to mac-revision via WFT, then downlo",156,55,2017-05-15 06:26:24,2017-05-17 05:45:53,tjk473,Shen Anmin,0
+17177,qiliang,Liang Qing Quan,I97783d6d03281c03217cd70f2d5a3e3e15ed1f7e,FEATURE:NF LTE3597 add onesct case for 20MHz,246,40,2017-05-11 09:00:48,2017-05-15 06:44:17,dbgn37,Zhang Hui Tuan,6
+17077,lgeng,Geng Li Ying,I8d96f0eec49d4d9b61f9b88ebb4cd05ef583f1e2, match ttitrace harq for TDD,3,2,2017-05-05 10:32:31,2017-05-11 03:07:12,tjk473,Shen Anmin,0
+17067,x8zhu,Zhu Xiao,I3621edc93be67dd77df1fe1ca2425810c53fa39c,"Lionfish:change to using core 15,16,17",53,4,2017-05-05 07:00:26,2017-05-09 06:55:15,hfm487,Zhong Ping,4
+17065,hfm487,Zhong Ping,I57525e0556bfa2e12e2e9bfc1da5f06db3dd14fe,"lionfish:1,define macro _LITTLE_ENDIAN and TSCL. 2,support reverseByteOrder for u32 in 64bit system",6,0,2017-05-05 05:49:04,2017-05-05 06:55:55,hfm487,Zhong Ping,0
+17054,chezou,Zou Chenglin,Id880dff2beac5b05b78ee5023d9bd6b84ce72c86,LBT3576: update cases author,2,1,2017-05-04 09:18:09,2017-05-05 05:28:15,tjk473,Shen Anmin,0
+16986,qiliang,Liang Qing Quan,I6ac69dbaa46ced8bf9cffaea15493134c373ac15,FEATURE:NF LTE3597 prb init and ul grant puma decode for suport 20MHz,17,5,2017-04-28 01:13:46,2017-04-28 02:38:34,dbgn37,Zhang Hui Tuan,2
+17012,qiliang,Liang Qing Quan,I22694c3267d104d52eb23271291e8c0ec5af9d6a,FEATURE:NF LTE3597 fix code static analysis issue,13,11,2017-05-02 05:30:06,2017-05-02 05:54:59,dbgn37,Zhang Hui Tuan,0
+17004,qiliang,Liang Qing Quan,I28be67f6198838e76c8470e79c072bae957ea6c9,FEATURE:NF LTE3597 fix ut issue,11,0,2017-05-02 02:39:11,2017-05-02 02:59:09,dbgn37,Zhang Hui Tuan,0
+16966,qiliang,Liang Qing Quan,I93c82d23e8f1745e017990dbaaca710aec8ce4b4,FEATURE:NF LTE3128 fix comment,1,1,2017-04-27 01:14:30,2017-04-27 02:40:07,dbgn37,Zhang Hui Tuan,0
+16879,hfm487,Zhong Ping,I2fcea3db1a5fb85e496a14c78a1243b69f7cd9c9,remove obsolete AUTHOR from sct case,7,25,2017-04-18 09:53:53,2017-04-18 13:16:20,hfm487,Zhong Ping,0
+16867,qiliang,Liang Qing Quan,Ic4304e1383417117d7b70b979dfdf0be7154f034,FEATURE:NF LTE3128 add ut for harq,75,0,2017-04-17 08:06:11,2017-04-18 01:12:16,dbgn37,Zhang Hui Tuan,0
+16859,qiliang,Liang Qing Quan,I9de50ef11e38feabf61cceaca7ea9282983a4976,FEATURE:NF LTE3128 fix log issue,11,13,2017-04-17 02:41:06,2017-04-17 04:38:44,dbgn37,Zhang Hui Tuan,0
+16822,x8zhu,Zhu Xiao,Ifaffda27e4b9eb5224a8e815a52dbd4b3f361963,fix warning for llf10 htenv,39,17,2017-04-13 07:18:15,2017-04-13 09:54:33,hfm487,Zhong Ping,2
+16801,lgeng,Geng Li Ying,Ic4328e84f60177ec6d4ec1a4f5d68dde2d21cb75,reduce duplication in UlReceiveRequestBundler.cpp,54,74,2017-04-12 10:06:41,2017-04-14 02:09:13,dbgn37,Zhang Hui Tuan,1
+16826,hfm487,Zhong Ping,I70bb17e2141aafa8b3d85b82e9e3924e214d3334,add team and owner name as author in cases,14,12,2017-04-13 08:11:02,2017-04-13 14:09:48,hfm487,Zhong Ping,0
+16763,yawzheng,Zheng Ya Wei,I1f2fa0a1eeec9bfaa41c2a58f9699c6d7b135aeb,FEATURE:NF LTE3128 refine print log,131,122,2017-04-10 05:18:28,2017-04-10 05:59:55,lianzeng,Zeng Liang,3
+16752,qiliang,Liang Qing Quan,I05dc74316b36fda41d9521e8d04d032e2e204289,FEATURE:NF LTE3128 refine print log,80,77,2017-04-07 07:33:36,2017-04-10 02:06:53,dbgn37,Zhang Hui Tuan,0
+16721,qiliang,Liang Qing Quan,Ie6c35ab73902a2d59ee98833e8133ee8cce429d3,FEATURE:NF LTE3128 refine print log,30,33,2017-04-06 03:11:10,2017-04-06 09:21:40,dbgn37,Zhang Hui Tuan,5
+16690,qiliang,Liang Qing Quan,I78cc5af294a5b7e58c74180740eed8b525ceff06,FEATURE:NF LTE3128-A-v7: Various BLER to verify special traffic interwork with paging,35,4,2017-04-01 02:33:28,2017-04-01 05:24:02,dbgn37,Zhang Hui Tuan,0
+16631,x8zhu,Zhu Xiao,I32aa6b38c7fb68ae110f1006f9bd164e24449531,recommit for 64bit changes for htenv of lionfish,107,38,2017-03-29 06:19:20,2017-03-29 09:39:56,hfm487,Zhong Ping,1
+16619,qiliang,Liang Qing Quan,Ifce33e97e2aee662e9228b8c17c5370530f1cf60,FEATURE:NF LTE3128 fix comments,4,3,2017-03-28 02:14:28,2017-03-29 02:16:22,dbgn37,Zhang Hui Tuan,0
+16501,x8zhu,Zhu Xiao,Ia75bf9b9ef2c4af45b02f2972d58dde416e5e22b,compile htEnv of llf10 with 64bit,110,41,2017-03-20 09:02:15,2017-03-23 07:21:58,hfm487,Zhong Ping,0
+16552,hfm487,Zhong Ping,Ia5dc19fb6805e817c01262d0481ffadbe51d7538,Lionfish:adapt UlPhyReceiver for lionfish sct,65,97,2017-03-22 06:36:26,2017-03-23 01:44:32,hfm487,Zhong Ping,0
+16550,qiliang,Liang Qing Quan,Ibba31782d83dbcc8e00e4c2250e108aa0bfd4aa0,FEATURE:NF LTE3128 add tti trace for drb,24,18,2017-03-22 03:12:19,2017-03-22 03:15:29,dbgn37,Zhang Hui Tuan,0
+16522,qiliang,Liang Qing Quan,I62035d20e4138afd5d8e067df83754cd00cb13ea,FEATURE:NF LTE3128-R-v harq max tr and pdsch bler fix,22,15,2017-03-21 03:20:00,2017-03-21 07:03:01,dbgn37,Zhang Hui Tuan,0
+16513,hfm487,Zhong Ping,Ib44c6dc908f9c5cb14b70e0cbd7ee2e7fa5a4c1e,lionfish:fix complexity error at 419907,14,5,2017-03-20 11:55:09,2017-03-20 12:31:51,hfm487,Zhong Ping,0
+16506,h18wang,Wang Hong Wei,I9119a8a93757fad2b022a6e1697d9f28b43c0acb,[Lionfish]:Add minilog collection script for logging when ARM core happens crash.,2,0,2017-03-20 11:00:31,2017-03-20 11:49:23,hfm487,Zhong Ping,0
+16352,hfm487,Zhong Ping,I1c88a7adbd11f9dca4f3049137711ddfd6c75732,"lionfish:1,change UcontextTask stack size for lionfish. 2,add LTE_MAC_SCT_MAC_SGNL_CHECKER_CPID LTE_MAC_SCT_MAC_CELL_MEAS_CHECKER_CPID for ARM SCT,because both of CPIDs will be registered in MACPTR and puma&checker, but MACPTR have same NID as puma&checke",20,6,2017-03-10 02:02:45,2017-03-10 03:14:53,hfm487,Zhong Ping,0
+16448,qiliang,Liang Qing Quan,I711895a51f5cfd8c0ed2ce64a3742c170bff2e3c,FEATURE:NF LTE3128 fix ut valigrind and mcs don't adjustment base data,6,8,2017-03-16 01:38:42,2017-03-16 02:52:20,dbgn37,Zhang Hui Tuan,0
+16394,x8zhu,Zhu Xiao,Id3f61d39e7f90287ddd85e9bbec0fbc714c3739b,LTE3146:fix htenv compile issue for llf10,125,47,2017-03-14 02:42:55,2017-03-15 02:26:23,hfm487,Zhong Ping,3
+16401,qiliang,Liang Qing Quan,I568ac0065953c97ea090476a04aa9280cc785805,FEATURE:NF LTE3128 add UT for multi DRB,31,2,2017-03-14 05:49:13,2017-03-15 01:06:14,dbgn37,Zhang Hui Tuan,0
+16290,qiliang,Liang Qing Quan,I572f2e180a9725e524066bab06c1a60356c93f03,FEATURE:NF LTE3128 add onesct case for multi DRB,420,1,2017-03-07 02:57:08,2017-03-13 02:18:22,dbgn37,Zhang Hui Tuan,1
+16262,qiliang,Liang Qing Quan,Iac3714b24ecfd3d8d3e3aa8ebf3372a140f06be9,FEATURE:NF LTE3128 modify author and delete flaky flag,5,5,2017-03-03 03:11:51,2017-03-03 03:21:31,dbgn37,Zhang Hui Tuan,0
+16234,qiliang,Liang Qing Quan,Iecfb0bd5ffb7900998fe9afb9b5978da5e4bc470,FEATURE:NF LTE3128 support multi DRB,112,26,2017-03-01 09:30:07,2017-03-03 02:59:21,dbgn37,Zhang Hui Tuan,1
+16208,qiliang,Liang Qing Quan,I0366ae09d45b3549a0b314281aa8379fd7f72545,FEATURE:NF LTE3128-M-m support multi DRB,80,38,2017-02-28 06:13:16,2017-03-01 05:24:16,dbgn37,Zhang Hui Tuan,1
+16204,qiliang,Liang Qing Quan,I9bb99617e9ebb763b9fde18c0ffef1b68f39f4fe,FEATURE:NF LTE3128-R-v:fix comments,21,21,2017-02-28 02:37:00,2017-02-28 03:24:45,dbgn37,Zhang Hui Tuan,0
+16160,qiliang,Liang Qing Quan,I10f77602caafa91ddb4e571adca2902b9acb1353,FEATURE:NF LTE3128-R-v LTE-M - add log,44,22,2017-02-24 02:42:23,2017-02-24 05:12:33,dbgn37,Zhang Hui Tuan,0
+16158,h18wang,Wang Hong Wei,Iafebeb79fb1fef9fb2208e43f460864e404e9282,[Lionfish]:Modify MACPS deployment from core16/17 to core2/3 because CC&S doesn't support MultiCluster; and host test code.,38,35,2017-02-23 11:54:24,2017-02-24 01:45:19,hfm487,Zhong Ping,0
+16148,qiliang,Liang Qing Quan,Iab3a3c1779b337c37c728bde8149e2b45dd73ff3,FEATURE:NF LTE3128-B-k:fix code issue,16,4,2017-02-23 05:35:38,2017-02-23 07:48:29,dbgn37,Zhang Hui Tuan,0
+16101,qiliang,Liang Qing Quan,I07b8ed30c19f8760b67cc9c5c804bace1d9e698e,FEATURE:NF LTE3128-R-e LTE-M - use default mcs when actAmcCatm dl disable,54,4,2017-02-21 02:45:36,2017-02-21 05:21:10,dbgn37,Zhang Hui Tuan,0
+15904,yugqiao,Qiao Yu Guo,I9c82af9a1d7c7e9500d5b5850c6d36e4dc80c9b3,FEATURE:NF LTE3128-R-e2: add DL LA onesct cases,418,3,2017-02-08 03:12:19,2017-02-21 05:08:48,dbgn37,Zhang Hui Tuan,12
+16080,qiliang,Liang Qing Quan,I6d93fc8e1293507673a8a58f1b107155ed6a93eb,FEATURE:NF LTE3128-B-k:DL HARQ msg4 repeation adn fix comment,67,12,2017-02-20 06:54:02,2017-02-20 07:54:49,dbgn37,Zhang Hui Tuan,0
+15807,lintu,Tu Ling Gang,Ie3c78a669d049a7f3a251697dc695d79bd11f71c,FEATURE:NF LTE3128:add ttiTrace parameters,144,12,2017-01-24 03:21:08,2017-02-17 01:28:50,dbgn37,Zhang Hui Tuan,0
+16034,lintu,Tu Ling Gang,I796234a4ca40e69a9a194cf4034a0ab0334aa3c8,FEATURE:NF LTE3128:add ttiTrace parameters in TtiTrace Tool,44,14,2017-02-16 08:51:59,2017-02-16 09:28:26,dbgn37,Zhang Hui Tuan,0
+16002,qiliang,Liang Qing Quan,I699c7b540e5250d090c8fdb5485fc6b5eb37057e,FEATURE:NF LTE3128-R-e LTE-M - ignore msg4 harq feedback for deltaCqi update,6,5,2017-02-14 09:24:46,2017-02-15 05:06:06,dbgn37,Zhang Hui Tuan,0
+15997,qiliang,Liang Qing Quan,I71a2a8c347213f750a2d34efc873addb2e2654b1,FEATURE:NF LTE3128-R-v LTE-M - Basic LTE-M function retx,25,7,2017-02-14 06:58:54,2017-02-14 08:57:10,dbgn37,Zhang Hui Tuan,0
+15990,qiliang,Liang Qing Quan,Ice6cf7989629ab3d2bd0b6814a4f091feb81b6cb,FEATURE:NF LTE3128-R-e LTE-M - Basic LA functions implement,4,1,2017-02-14 03:22:13,2017-02-14 05:22:01,dbgn37,Zhang Hui Tuan,0
+15976,qiliang,Liang Qing Quan,Idcf0223d192c2a1852664549382c7021c3cbaf3a,FEATURE:NF LTE3128-R-e LTE-M - Basic LA functions implement,15,3,2017-02-13 07:06:53,2017-02-14 02:08:58,dbgn37,Zhang Hui Tuan,1
+15954,qiliang,Liang Qing Quan,Ie74a9a4f7c11756012a78759dbc335668f202448,FEATURE:NF LTE3128-R-e LTE-M - Basic LA functions implement,30,9,2017-02-10 06:07:16,2017-02-13 05:06:32,dbgn37,Zhang Hui Tuan,0
+15975,qiliang,Liang Qing Quan,Ide1b45e282f17d0260384f8243e29c5495ec9612,FEATURE:NF LTE3128-R-e LTE-M - fix comment,39,59,2017-02-13 05:54:55,2017-02-13 06:11:55,dbgn37,Zhang Hui Tuan,0
+15909,qiliang,Liang Qing Quan,I88f3f44671c048f5687530354a4720e46c2b2fdc,FEATURE:NF LTE3128-R-e LTE-M - Basic LA functions implement,70,31,2017-02-08 07:42:05,2017-02-10 05:02:17,dbgn37,Zhang Hui Tuan,0
+15910,lintu,Tu Ling Gang,I2dcd5f325115fa012c37e0108742baa4477b3dd4,LTE3128:fix review comments,10,11,2017-02-08 07:59:24,2017-02-09 10:50:03,dbgn37,Zhang Hui Tuan,0
+15917,yugqiao,Qiao Yu Guo,I882151fccc66f5955712833254ae4c88e8b513fe,FEATURE:NF LTE3128-R-e2: add catAmcParams to CellSetup message,21,0,2017-02-08 09:40:25,2017-02-09 01:34:04,dbgn37,Zhang Hui Tuan,1
+15892,shouzhou,Zhou Shouyuan,I655d17b9ba78df9e16432a8c48e0d06d7dba4de5,PR213309: Periodic RI not used in PCELL of 3CC UE fix get RI from PUSCH and PUCCH in transphanse,5,4,2017-02-07 05:59:06,2017-02-07 08:10:34,hfm487,Zhong Ping,1
+15887,qiliang,Liang Qing Quan,I2cde2186e1035b7cbb02e9567113dae63fa89b2e,FEATURE:NF LTE3128-R-e LTE-M - Basic LA functions implement,119,23,2017-02-07 02:22:51,2017-02-07 06:12:16,dbgn37,Zhang Hui Tuan,0
+15877,qiliang,Liang Qing Quan,Idf5b5265d42aa37ae10ace44117905b8e182a1fa,FEATURE:NF LTE3128-R-e LTE-M - Basic LA functions implement,54,4,2017-02-06 06:10:45,2017-02-06 08:48:21,dbgn37,Zhang Hui Tuan,0
+15778,qiliang,Liang Qing Quan,If96930f91bc123cc1590b4fe10cdf1f6168901f4,FEATURE:NF LTE3128-R-v LTE-M - Basic LTE-M functions - fix comment,53,45,2017-01-22 02:04:27,2017-01-22 07:49:35,dbgn37,Zhang Hui Tuan,0
+15607,lintu,Tu Ling Gang,I14838719b152f9c25b2eea34c64c3ece6db9a393,"FEATURE:NF LTE3128-R-v:in puma,verify PHY_MPdschSendReq PHY_MPdcchSendReq and MAC_PduMuxCombinedReq about LTE-M ue",137,12,2017-01-10 09:55:02,2017-01-18 05:32:26,dbgn37,Zhang Hui Tuan,9
+15711,qiliang,Liang Qing Quan,Ie2392fea1a193fe4ac25d201a4cdc0a2ae39009a,FEATURE:NF LTE3128-R-v LTE-M - Basic LTE-M functions,4,1,2017-01-17 03:24:01,2017-01-17 09:16:20,dbgn37,Zhang Hui Tuan,1
+15678,qiliang,Liang Qing Quan,I852d64c4228724d05e53878390f444227760ec9a,FEATURE:NF LTE3128-R-v LTE-M - Basic LTE-M functions - fix comment,17,14,2017-01-16 03:07:25,2017-01-16 05:07:51,dbgn37,Zhang Hui Tuan,0
+15661,qiliang,Liang Qing Quan,I63f122d817fbcba240906789d02bc2679dba3966,FEATURE:NF LTE3128-R-v LTE-M - Basic LTE-M functions - support retx,40,42,2017-01-13 01:01:33,2017-01-13 01:14:49,dbgn37,Zhang Hui Tuan,0
+15647,qiliang,Liang Qing Quan,I37ab8f44143850061386608b751c3bbc033dacc6,FEATURE:NF LTE3128-R-v LTE-M - Basic LTE-M functions - support retx,40,42,2017-01-12 05:55:01,2017-01-12 08:58:09,dbgn37,Zhang Hui Tuan,0
+15594,qiliang,Liang Qing Quan,I9b7bbe7edd7a6ec2e7d6623389302673a10716f6,FEATURE:NF LTE3128-R-v LTE-M - Basic LTE-M functions - add ut,34,0,2017-01-10 05:36:03,2017-01-10 06:23:50,dbgn37,Zhang Hui Tuan,0
+15571,qiliang,Liang Qing Quan,I2219485a4e68dbd77ce27b9795398877ee64e93d,FEATURE:IN fix unstable onesct,64,45,2017-01-09 00:55:32,2017-01-09 01:35:03,dbgn37,Zhang Hui Tuan,0
